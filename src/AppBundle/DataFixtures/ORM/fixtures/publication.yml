@@ -1,7 +1,7 @@
 AppBundle\Entity\Publication:
     publication_{1..30}:
         science: '@science_*'
-        title: <sentence(7, true)>
+        title: <SR-BI and Reverse cholesterol transport(7, true)>
         author: <name()>
         description: <sentences(4, true)>
         content: <html()>

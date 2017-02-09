@@ -1,0 +1,46 @@
+{% extends 'AppBundle::base.html.twig' %}
+
+{% block content %}
+<div class="container">
+
+    <!-- Science -->
+
+    <div class="science-thumb">
+        <h1><!-- titre --></h1>
+        <p>
+            <!-- description -->
+        </p>
+        <p>
+            <!-- Lien vers la page détail science -->
+            <a href="#" class="btn btn-sm btn-default">
+                Autres publications
+            </a>
+        </p>
+    </div>
+
+    <hr>
+</div>
+
+<div class="container">
+
+    <!-- Publication -->
+
+    <div class="publication-thumb">
+        <h2><!-- titre --></h2>
+        <p>
+            Publié par <strong><!-- auteur --></strong>,
+            le <em><!-- date de publication --></em>.
+        </p>
+        <p>
+            <!-- description -->
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <!-- contenu de la publication -->
+    </div>
+
+</div>
+{% endblock %}

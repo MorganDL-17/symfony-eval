@@ -5,3 +5,12 @@ app_admin:
 app_home:
     path: /
     defaults: { _controller: AppBundle:App:home }
+
+app_publication:
+        resource: "@AppBundle/Resources/config/routing/publication.yml"
+        prefix:   /publication
+
+app_science:
+        resource: "@AppBundle/Resources/config/routing/science.yml"
+        prefix:   /science
+

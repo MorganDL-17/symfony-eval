@@ -2,3 +2,28 @@ app_admin_dashboard:
     path: /
     defaults:
         _controller: AppBundle:Admin/Dashboard:dashboard
+
+app_admin_publication_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Admin/Publication:index" }
+    methods:  GET
+
+app_admin_publication_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Admin/publication:show" }
+    methods:  GET
+
+app_admin_publication_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Admin/publication:new" }
+    methods:  [GET, POST]
+
+app_admin_publication_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Admin/publication:edit" }
+    methods:  [GET, POST]
+
+app_admin_publication_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Admin/publication:delete" }
+    methods:  DELETE
